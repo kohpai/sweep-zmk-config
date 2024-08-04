@@ -37,7 +37,7 @@
 #define U_WH_L &msc SCRL_LEFT
 #define U_WH_R &msc SCRL_RIGHT
 
-#define MCLK() &mkp LCLK &mkp RCLK &mkp MCLK
+#define MOUSE() &mkp LCLK &mkp RCLK &mkp MCLK
 #define MMV() U_MS_L U_MS_D U_MS_U U_MS_R
 #define MSC() U_WH_L U_WH_D U_WH_U U_WH_R
 
@@ -88,7 +88,7 @@
             &trans     &trans     &trans     &trans     &trans         MMV()                                       &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     MCLK()                           &trans
+            &trans     &trans     &trans     &trans     &trans         &trans     MOUSE()                          &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
