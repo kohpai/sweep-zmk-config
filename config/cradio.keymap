@@ -11,7 +11,8 @@
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LCTRL k2  &ht LALT k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1   &ht RALT k2   &ht RCTRL k3 &ht RSHFT k4
-#define BLTH(s1,s2,s3,s4) &bt BT_CLR &bt BT_SEL s1 &bt BT_SEL s2 &bt BT_SEL s3 &bt BT_SEL s4
+#define BTCN(s1,s2,s3,s4,s5) &bt BT_SEL s1 &bt BT_SEL s2 &bt BT_SEL s3 &bt BT_SEL s4 &bt BT_SEL s5
+#define BTDN(s1,s2,s3,s4,s5) &bt BT_DISC s1 &bt BT_DISC s2 &bt BT_DISC s3 &bt BT_DISC s4 &bt BT_DISC s5
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
@@ -184,13 +185,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+           &bt BT_CLR  &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &kp BSPC   &trans     &trans     &trans     &ht RSHFT ENTER
+            BTDN(0,       1,         2,         3,         4)          &kp BSPC   &trans     &trans     &trans     &ht RSHFT ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+            &trans     &trans     &trans     &trans     &trans         BTCN(0,       1,         2,         3,         4)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &kp TAB    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
