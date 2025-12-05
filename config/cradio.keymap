@@ -69,7 +69,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
-            &ht LSHFT A &lt 5 S   &lt 1 D    &lt 3 F    &kp G               &kp H      &lt 4 J    &lt 2 K    &lt 6 L    &ht RSHFT SEMI
+           &ht LSHFT A  &lt 5 S   &lt 1 D    &lt 3 F    &kp G          &kp H      &lt 4 J    &lt 2 K    &lt 6 L    &ht RSHFT SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &ht LGUI Z &ht LCTRL X &ht LALT C &kp V      &kp B         &kp N     &kp M       &ht RALT COMMA  &ht RCTRL DOT &kp FSLH
